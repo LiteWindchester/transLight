@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","main.css"],"names":[],"mappings":"AAAA,KACE,gCCCF","file":"main.css","sourcesContent":["body {\r\n  font-family: 'Open Sans', sans-serif;\r\n}","body {\n  font-family: \"Open Sans\", sans-serif;\n}"]}
