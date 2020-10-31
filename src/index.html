@@ -15,18 +15,19 @@
       <nav class="nav">
         <a href="./" class="logo bg-icon"></a>
         <div class="links flex aic">
-          <a href="#" class="item">О компании</a>
-          <a href="#" class="item">Портфолио</a>
-          <a href="#" class="item">Каталог</a>
-          <a href="#" class="item">Сервис</a>
-          <a href="#" class="item">Контакты</a>
+          <a href="#" data-goto="welcome" class="item">О компании</a>
+          <a href="#" data-goto="projects" class="item">Портфолио</a>
+          <a href="#" data-goto="catalog" class="item">Каталог</a>
+          <a href="#" data-goto="rent" class="item">Сервис</a>
+          <a href="#" data-goto="contacts" class="item">Контакты</a>
         </div>
       </nav>
     </div>
   </header>
 
   <main class="main">
-    <div class="welcome">
+
+    <div class="welcome" data-section="welcome">
       <div class="container">
         <div class="welcome-content">
           <div class="title">Светотехническое оборудование<br />в Петербурге</div>
@@ -38,51 +39,240 @@
     </div>
 
     <div class="container">
-      <div class="section section-works">
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div>
-        <div class="title section-title">Наши проекты</div><div class="title section-title">Наши проекты</div>
+      <div class="section section-works" data-section="projects">
+        <div class="title-line flex aic jcsb">
+          <div class="title section-title">Наши проекты</div>
+          <div class="arrows flex aic" data-projects-slider-arrows>
+            <div class="arrow prev-arrow"></div>
+            <div class="arrow next-arrow"></div>
+          </div>
+        </div>
+        
+        <div class="slider" data-projects-slider>
+
+          <div class="slide">
+            <div class="img" style="background-image: url('./img/projects/slide1.jpg');">
+              <div class="info">
+                <div class="name title">ССК “ОЛИМП”</div>
+                <div class="description">Световое оформление форума “Шубы-2019”</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="img" style="background-image: url('./img/projects/slide2.jpg');">
+              <div class="info">
+                <div class="name title">ССК “ОЛИМП”</div>
+                <div class="description">Световое оформление форума “Шубы-2019”</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="img" style="background-image: url('./img/projects/slide1.jpg');">
+              <div class="info">
+                <div class="name title">ССК “ОЛИМП”</div>
+                <div class="description">Световое оформление форума “Шубы-2019”</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="slide">
+            <div class="img" style="background-image: url('./img/projects/slide2.jpg');">
+              <div class="info">
+                <div class="name title">ССК “ОЛИМП”</div>
+                <div class="description">Световое оформление форума “Шубы-2019”</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="section section-catalog" data-section="catalog">
+        <div class="title section-title">Каталог продукции</div>
+
+        <div class="catalog-tabs">
+          <div class="tabs-titles flex jcc aic rel" data-projects-tabs-titles>
+            <div class="item title active">Robe</div>
+            <div class="item title">Compulite</div>
+            <span class="liner abs" data-projects-tabs-liner></span>
+          </div>
+          <div class="tabs-contents" data-projects-tabs-contents>
+            <div class="item active">
+              <div class="content-items flex aic jcsb">
+                <div class="content-item">
+                  <div class="img" style="background-image: url('./img/catalog/1.jpg');">
+                    <div class="name">Статичные светодиодные приборы</div>
+                  </div>
+                </div>
+
+                <div class="content-item">
+                  <div class="img" style="background-image: url('./img/catalog/2.jpg');">
+                    <div class="name">Контроллеры</div>
+                  </div>
+                </div>
+
+                <div class="content-item">
+                  <div class="img" style="background-image: url('./img/catalog/3.jpg');">
+                    <div class="name">Аксессуары</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="content-items flex aic jcsb">
+                <div class="content-item">
+                  <div class="img" style="background-image: url('./img/catalog/2.jpg');">
+                    <div class="name">Статичные движущиеся ...</div>
+                  </div>
+                </div>
+              
+                <div class="content-item">
+                  <div class="img" style="background-image: url('./img/catalog/3.jpg');">
+                    <div class="name">Контролируй свои эмоции</div>
+                  </div>
+                </div>
+              
+                <div class="content-item">
+                  <div class="img" style="background-image: url('./img/catalog/1.jpg');">
+                    <div class="name">Ты чё пёс</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section section-rent" data-section="rent">
+        <div class="title section-title">Аренда оборудования</div>
+
+        <div class="rent-layout flex aic jcsb">
+          <div class="text">
+            Мы занимаемся прокатом светового и сценического оборудования ведущих мировых производителей, таких как Robe, SGM,
+            StudioDue, ChainMaster, Milos, Universal Effects, ArtLighting, MobilTech, Lampo, Martin, Spotlight, Compulite, Eurolite
+            и др.
+          </div>
+          <div class="slider">
+            <div class="name-line flex aic jcsb">
+              <div class="name">Новое оборудование, предоставляемое в аренду:</div>
+              <div class="arrows flex aic" data-rent-slider-arrows>
+                <div class="arrow prev-arrow"></div>
+                <div class="arrow next-arrow"></div>
+              </div>
+            </div>
+
+            <div class="slider-items" data-rent-slider>
+              <div class="item">
+                <div class="slide-content flex aic">
+                  <div class="img" style="background-image: url('./img/rent1.jpg');"></div>
+                  <div class="info">
+                    <div class="info-title">Robe Robin ParFect 100</div>
+                    <div class="info-features">
+                      <div class="item">Источник света 12 светодиодов RGBW по 15 Вт каждый</div>
+                      <div class="item">Угол раскрытия 7°</div>
+                      <div class="item">В комплекте рассеивающая линза 40°</div>
+                      <div class="item">Потребляемая мощность 200 Вт</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="slide-content flex aic">
+                  <div class="img" style="background-image: url('./img/rent1.jpg');"></div>
+                  <div class="info">
+                    <div class="info-title">Robe Robin ParFect 100</div>
+                    <div class="info-features">
+                      <div class="item">Источник света 12 светодиодов RGBW по 15 Вт каждый</div>
+                      <div class="item">Угол раскрытия 7°</div>
+                      <div class="item">В комплекте рассеивающая линза 40°</div>
+                      <div class="item">Потребляемая мощность 200 Вт</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section section-news" data-section="news">
+        <div class="title-line flex aic jcsb">
+          <div class="title section-title">Новости</div>
+          <a href="#" class="view-more">Все новости</a>
+        </div>
+
+        <div class="news-items">
+          <div class="item item-thick">
+            <img src="./img/news1.jpg" alt="" class="img">
+            <div class="text">
+              <div class="name-date">
+                <div class="name">Семинар Milos</div>
+                <div class="date">27.01.2019</div>
+              </div>
+
+              <div class="short">
+                Наши сотрудники прошли последний семинар от компании Milos.
+                Они получили новый объем знаний, который позволит нашей компании заниматься оборудованием не только мероприятий, но
+                производственных помещений.
+              </div>
+
+              <a href="#" class="read-full">Читать полностью...</a>
+            </div>
+          </div>
+
+          <div class="item item-thin">
+            <div class="name">Выставка Prolight+Sound NAMM Russia 2016</div>
+            <div class="short">30 контрактов, тысячи восторженных посетителей lorem ipsum dolor sit amet consectetur aidspicing elit</div>
+
+            <div class="img-date">
+              <img src="./img/news2.jpg" alt class="img">
+              <div class="date">27.01.2019</div>
+            </div>
+          </div>
+
+          <div class="item item-thin">
+            <div class="name">Семинар Robe</div>
+            <div class="short">30 января 2017 года наши сотрудники побывали в Берлине lorem ipsum dolor sit amet consectetur aidspicing elit</div>
+            
+            <div class="img-date">
+              <img src="./img/news3.jpg" alt class="img">
+              <div class="date">27.01.2019</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
   </main>
 
-  <footer class="footer"></footer>
+  <footer class="footer" data-section="contacts">
+    <div class="container">
+      <div class="footer-contacts flex aic jcsb footer-row">
+        <a href="tel:8127108025" class="num">(812) 710-80-25</a>
+        <div class="address">191180, Санкт-Петербург, Набережная реки Фонтанки, 90, корпус 1</div>
+        <a href="mailto:mail@translight.ru" class="email">mail@translight.ru</a>
+      </div>
+      <div class="footer-row">
+        <nav class="footer-nav flex fdc">
+          <a href="#" data-goto="welcome" class="item">О компании</a>
+          <a href="#" data-goto="news" class="item">Новости</a>
+          <a href="#" data-goto="catalog" class="item">Каталог</a>
+          <a href="#" data-goto="rent" class="item">Аренда</a>
+          <a href="#" data-goto="projects" class="item">Наши проекты</a>
+          <a href="#" class="item">Сервисное обслуживание</a>
+        </nav>
+      </div>
+      <div class="footer-bottom flex aic jcsb footer-row">
+        <div class="copy">© 2019 ЗАО «Транслайт». Все права защищены.</div>
+        <div class="by">
+          Разработка: <a href="//vk.com/Windchester">Windchester</a>. Дизайн: D-e-n.ru
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="./js/main.min.js"></script>
 </body>
